@@ -7,4 +7,5 @@ st.info('Welcome To Practice sessions   ')
 
 st.write("Let's see the labeled data")
 
-df=pd.read_csv("streamlit_app.py")
+df=pd.read_csv(".devcontainer /streamlit_practice.csv")
+df
