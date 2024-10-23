@@ -7,4 +7,4 @@ st.info('Welcome To Practice sessions   ')
 
 st.write("Let's see the labeled data")
 
-df=pd.read_csv("")
+df=pd.read_csv(".devcontainer ")
