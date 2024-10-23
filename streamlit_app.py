@@ -2,4 +2,4 @@ import streamlit as st
 
 st.title('🎈 Machine Learning Practice')
 
-st.write('Hello world!')
+st.write('Wlcome To Practice ')
