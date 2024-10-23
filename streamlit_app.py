@@ -10,8 +10,8 @@ with st.expander("Data is"):
   df=pd.read_csv(".devcontainer /streamlit_practice.csv")
   df
   st.write("**X**")
-  x=df.drop("Date")
+  x = df.drop("Date",axis=1)
   x
   st.write("**Y**")
-  y=df.Date
+  y = df.Date
   y
