@@ -9,3 +9,5 @@ st.write("Let's see the labeled data")
 with st.expander("Data is"):
   df=pd.read_csv(".devcontainer /streamlit_practice.csv")
   df
+  df.write("**X**")
+  x=df.drop("")
