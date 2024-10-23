@@ -13,5 +13,5 @@ with st.expander("Data is"):
   X = df.drop('Date',axis=1)
   X
   st.write("**Y**")
-  y = df.Date
-  y
+  Y = df.Date
+  Y
