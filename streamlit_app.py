@@ -9,9 +9,9 @@ st.write("Let's see the labeled data")
 with st.expander("Data is"):
   df=pd.read_csv(".devcontainer /streamlit_practice.csv")
   df
-  df.write("**X**")
+  st.write("**X**")
   x=df.drop("Date")
   x
-  df.write("**Y**")
+  st.write("**Y**")
   y=df.Date
   y
