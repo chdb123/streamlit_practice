@@ -21,6 +21,7 @@ with st.expander("Data is"):
 with st.expander("Data Visualization:"):
     # Create a new DataFrame with only the columns required for plotting
     chart_data = df[['VIEWS', 'WATCH_HOURS']]
+    chart_data
     
     st.write("Bar graph of VIEWS vs WATCH HOURS")
     st.bar_chart(chart_data)
