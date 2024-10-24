@@ -5,7 +5,7 @@ st.title('👉 Machine Learning Practice')
 
 st.info('Welcome to Practice sessions')
 
-st.subheading("Let's see the labeled data")
+st.subheader("Let's see the labeled data")
 
 # Load and display data
 with st.expander("Data is"):
