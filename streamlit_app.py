@@ -1,19 +1,31 @@
 import streamlit as st
 import pandas as pd
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 
 st.title('👉 Machine Learning Practice')
 
-st.info('Welcome To Practice sessions   ')
+st.info('Welcome to Practice sessions')
 
 st.write("Let's see the labeled data")
+
+# Load and display data
 with st.expander("Data is"):
-  df=pd.read_csv(".devcontainer /streamlit_practice.csv")
-  df
-  st.write("**X**")
-  X = df.drop('DATE',axis=1)
-  X
-  st.write("**Y**")
-  Y = df.DATE
-  Y
-  plt.plot(X,Y)
+    # Adjust the file path according to your setup
+    df = pd.read_csv(".devcontainer/streamlit_practice.csv")
+    st.write("**Full Data**")
+    st.dataframe(df)
+    
+    # Separate features (X) and target (Y)
+    st.write("**X (Features)**")
+    X = df.drop('DATE', axis=1)
+    st.dataframe(X)
+    
+    st.write("**Y (Target)**")
+    Y = df['DATE']
+    st.dataframe(Y)
+
+    # Plot the data
+    st.write("**Plot of X and Y**")
+    fig, ax = plt.subplots()
+    ax.plot(X, Y)
+    st.pyplot(fig)
