@@ -9,19 +9,14 @@ st.write("Let's see the labeled data")
 
 # Load and display data
 with st.expander("Data is"):
-    # Adjust the file path according to your setup
-    df = pd.read_csv(".devcontainer/streamlit_practice.csv")
-    st.write("**Full Data**")
-    st.dataframe(df)
-    
-    # Separate features (X) and target (Y)
-    st.write("**X (Features)**")
-    X = df.drop('DATE', axis=1)
-    st.dataframe(X)
-    
-    st.write("**Y (Target)**")
-    Y = df['DATE']
-    st.dataframe(Y)
+  df=pd.read_csv(".devcontainer /streamlit_practice.csv")
+  df
+  st.write("**X**")
+  X = df.drop('Date',axis=1)
+  X
+  st.write("**Y**")
+  Y = df.Date
+  Y
 
 with st.expander("Data Visualization:"):
     # Create a new DataFrame with only the columns required for plotting
