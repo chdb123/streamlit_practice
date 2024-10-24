@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from matplotlib import pyplot as plt
 
 st.title('👉 Machine Learning Practice')
 
@@ -15,3 +16,4 @@ with st.expander("Data is"):
   st.write("**Y**")
   Y = df.DATE
   Y
+  plt.plot(X,Y)
