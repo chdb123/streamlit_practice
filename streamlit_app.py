@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 st.title('👉 Machine Learning Practice')
 
@@ -26,6 +26,4 @@ with st.expander("Data is"):
 
     # Plot the data
     st.write("**Plot of X and Y**")
-    fig, ax = plt.subplots()
-    ax.plot(X, Y)
-    st.pyplot(fig)
+    st.bar_chart(X,Y)
