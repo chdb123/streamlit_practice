@@ -12,10 +12,10 @@ with st.expander("Data is"):
   df=pd.read_csv(".devcontainer /streamlit_practice.csv")
   df
   st.write("**X**")
-  X = df.drop('Date',axis=1)
+  X = df.drop('DATE',axis=1)
   X
   st.write("**Y**")
-  Y = df.Date
+  Y = df.DATE
   Y
 
 with st.expander("Data Visualization:"):
