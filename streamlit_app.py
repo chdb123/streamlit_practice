@@ -24,4 +24,5 @@ with st.expander("Data is"):
     Y = df['DATE']
     st.dataframe(Y)
 with st.expander("Data Visualization:"):
-    st.scatter_chart(data=df,X="",Y="")
+    #DATE,SUBSCRIBERS_GAINED,SUBSCRIBERS_LOST,VIEWS,WATCH_HOURS,LIKES,SHARES,COMMENTS,TOTAL_SUBSCRIBERS
+    st.scatter_chart(data=df,X="VIEWS",Y="WATCH_HOURS",color="DATE")
