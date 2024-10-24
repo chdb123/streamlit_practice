@@ -20,6 +20,7 @@ with st.expander("Data is"):
 
 with st.expander("Data Visualization:"):
     # Create a new DataFrame with only the columns required for plotting
+    df.set_index('DATE', inplace=True)
     chart_data = df[['VIEWS', 'WATCH_HOURS']]
     chart_data
     
