@@ -22,6 +22,5 @@ with st.expander("Data Visualization:"):
     # Create a new DataFrame with only the columns required for plotting
     chart_data = df[['VIEWS', 'WATCH_HOURS']]
     
-    # Plot the scatter chart
-    st.write("Scatter plot of VIEWS vs WATCH HOURS")
-    st.scatter_chart(chart_data)
+    st.write("Bar graph of VIEWS vs WATCH HOURS")
+    st.bar_chart(chart_data)
