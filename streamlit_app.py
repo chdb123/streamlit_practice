@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-#import matplotlib.pyplot as plt
 
 st.title('👉 Machine Learning Practice')
 
@@ -23,6 +22,11 @@ with st.expander("Data is"):
     st.write("**Y (Target)**")
     Y = df['DATE']
     st.dataframe(Y)
+
 with st.expander("Data Visualization:"):
-    #DATE,SUBSCRIBERS_GAINED,SUBSCRIBERS_LOST,VIEWS,WATCH_HOURS,LIKES,SHARES,COMMENTS,TOTAL_SUBSCRIBERS
-    st.scatter_chart(data=df,X="VIEWS",Y="WATCH_HOURS",color="DATE")
+    # Create a new DataFrame with only the columns required for plotting
+    chart_data = df[['VIEWS', 'WATCH_HOURS']]
+    
+    # Plot the scatter chart
+    st.write("Scatter plot of VIEWS vs WATCH HOURS")
+    st.scatter_chart(chart_data)
