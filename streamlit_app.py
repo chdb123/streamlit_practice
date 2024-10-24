@@ -23,7 +23,5 @@ with st.expander("Data is"):
     st.write("**Y (Target)**")
     Y = df['DATE']
     st.dataframe(Y)
-
-    # Plot the data
-    st.write("**Plot of X and Y**")
-    st.bar_chart(X,Y)
+with st.expander("Data Visualization:"):
+    st.scatter_chart(data=df,X="",Y="")
